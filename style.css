@@ -10,6 +10,7 @@
 
 .carousel .carousel-item-visible {
     display: block;
+    animation: fadeVisibility 0.7s;
 }
 
 .carousel-item img {
@@ -45,4 +46,13 @@
 
 .carousel .carousel-actions button#carousel-button-next {
     margin-right: 20px;
+}
+
+@keyframes fadeVisibility {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
